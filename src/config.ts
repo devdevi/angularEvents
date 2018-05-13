@@ -1,0 +1,19 @@
+// Configuracion del formulario de Login
+// Conectamos con api de Form io
+import { FormioAppConfig } from 'angular-formio';
+import { FormioAuthConfig } from 'angular-formio/auth';
+
+export const AppConfig: FormioAppConfig = {
+  appUrl: 'https://ftjauhitkletqrk.form.io',
+  apiUrl: 'https://api.form.io',
+  icons: 'fontawesome'
+};
+
+export const AuthConfig: FormioAuthConfig = {
+  login: {
+    form: 'user/login'
+  },
+  register: {
+    form: 'user/register'
+  }
+};
